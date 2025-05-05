@@ -3,13 +3,13 @@ import streamlit as st
 from dotenv import load_dotenv
 load_dotenv()
 import os
-# GROQ_API_KEY=os.environ.get("Groq_API_Key")
-# Tavily_API_KEY=os.environ.get("Tavily_API_Key")
-# OpenAI_API_KEY=os.environ.get("OpenAI_API_Key")
+GROQ_API_KEY=os.environ.get("Groq_API_Key")
+Tavily_API_KEY=os.environ.get("Tavily_API_Key")
+OpenAI_API_KEY=os.environ.get("OpenAI_API_Key")
 
-GROQ_API_KEY=st.secrets("Groq_API_Key")
-Tavily_API_KEY=st.secrets("Tavily_API_Key")
-OpenAI_API_KEY=st.secrets("OpenAI_API_Key")
+# GROQ_API_KEY=st.secrets("Groq_API_Key")
+# Tavily_API_KEY=st.secrets("Tavily_API_Key")
+# OpenAI_API_KEY=st.secrets("OpenAI_API_Key")
 
 # Step 2: Setup LLM and Tools
 from langchain_groq import ChatGroq
