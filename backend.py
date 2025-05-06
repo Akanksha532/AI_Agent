@@ -1,5 +1,6 @@
 #Step 1: Setup Pydantic Model (Schema Validation)
 import os
+import uvicorn
 from dotenv import load_dotenv
 load_dotenv()
 from pydantic import BaseModel
