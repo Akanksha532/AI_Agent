@@ -15,7 +15,7 @@ elif provider=='OpenAI':
 allow_web_search=st.checkbox("Allow Web Search")
 user_query=st.text_area("Enter your query:",height=70, placeholder="Enter your query...")
 
-API_URL="http://127.0.0.1:9999/chat"
+API_URL="https://ai-agent-l5ot.onrender.com/chat"
 if st.button("Ask Agent"):
     if user_query.strip():
     #get response
